@@ -30,6 +30,7 @@
   font-size: 20px;
   margin-top: 20px;
   margin-left: 80px;
+  font-weight: 500;
 }
 
 #infoMenu {
@@ -45,11 +46,12 @@
 
 .spanInfo {
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .pInfo {
   font-size: 20px;
+  font-weight: 400;
 }
 
 #sectionAbout {
@@ -62,7 +64,7 @@
 
 #titleAbout {
   font-size: 40px;
-  font-weight: medium;
+  font-weight: 500;
 }
 
 #textAbout {
@@ -82,7 +84,7 @@
 
 #titleForm {
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 60px;
 }
 
@@ -99,10 +101,17 @@ input {
   margin-bottom: 60px;
   padding: 0px 30px;
   font-size: 24px;
+  font-weight: 700;
+}
+
+input::placeholder {
+  opacity: 0.3;
+  color: #000000;
 }
 
 input:focus {
-  outline: none;
+  border: #c07212;
+  border-width: 2px;
 }
 
 button {
@@ -114,4 +123,15 @@ button {
   font-size: 30px;
   font-weight: bold;
   color: #ffffff;
+  box-shadow: 0px 5px 10px -5px #ffffff;
+  border: none;
+  transition: 0.5s;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: translateY(-15px);
+  box-shadow: 0px 5px 10px 0px #ffffff;
+  background-color: #e98c1b;
+  transition: 0.5s;
 }
